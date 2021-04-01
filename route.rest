@@ -1,0 +1,35 @@
+GET http://localhost:3000/subscribers
+
+###
+
+# get one
+GET http://localhost:3000/subscribers/6065d037a0a8cf02c499aff8
+
+
+###
+
+# create one
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Lam Doan",
+    "subscribeToChannel": "Lam Doan Fanbase"
+}
+
+
+###
+
+# Upadte one
+PATCH http://localhost:3000/subscribers/6065caaa7b98ca3aac8100a2
+Content-Type: application/json
+
+{
+    "name": "Chris Evan"
+}
+
+###
+
+
+# delete one
+DELETE http://localhost:3000/subscribers/6065d037a0a8cf02c499aff8
